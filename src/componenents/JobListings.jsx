@@ -10,7 +10,7 @@ const JobListings = ({ isHome = false }) => {
     useEffect(() => {
         // useEffect üzeridne async kullanamadığımız için burada ekstra fonksiyon yaratıyoruz
         const fetchJobs = async () => {
-            const apiUrl = isHome ? 'http://localhost:8000/jobs?_limit=3' : 'http://localhost:8000/jobs'
+            const apiUrl = isHome ? '/api/jobs?_limit=3' : '/api/jobs' // proxy de url duruyor oradan ulaşıyoruz
             try {
                 const res = await fetch(apiUrl);
                 const data = await res.json();
