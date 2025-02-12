@@ -5,15 +5,16 @@ import MainLayout from './layouts/MainLayout'
 import JobsPage from './pages/JobsPage'
 import NotFoundPage from './pages/NotFoundPage'
 import JobPage, { jobLoader } from './pages/JobPage'
+import AddJobPage from './pages/AddJobPage'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<MainLayout />}>
       <Route index element={<HomePage />} />
       <Route path='/jobs' element={<JobsPage />} />
+      <Route path='/add-job' element={<AddJobPage />} />
       <Route path='/jobs/:id' element={<JobPage />} loader={jobLoader} /> {/* burada : işareti dinamik olacağını belirtiyor */}
-      <Route path='*' element={<NotFoundPage/>} /> {/* Hata olduğunda yakalasın diye * path tanımladık. */}
-
+      <Route path='*' element={<NotFoundPage />} /> {/* Hata olduğunda yakalasın diye * path tanımladık. */}
     </Route>
   )
 )
