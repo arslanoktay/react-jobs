@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Link, useLoaderData, useNavigate, useParams } from 'react-router-dom';
-import Spinner from '../componenents/Spinner';
 import { FaArrowLeft, FaMapMarker } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
