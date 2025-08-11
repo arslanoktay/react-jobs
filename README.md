@@ -61,8 +61,8 @@ Follow these steps to get your project up and running on your local machine.
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME].git
-    cd [YOUR_REPO_NAME]
+    git clone https://github.com/arslanoktay/react-jobs
+    cd react-jobs
     ```
 
 2.  **Install Dependencies:**
